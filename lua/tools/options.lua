@@ -69,9 +69,3 @@ vim.o.pumheight = 10
 vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
--- 主题设置
-vim.cmd[[
-	syntax on
-	syntax enable
-	colorscheme onedark
-]]
