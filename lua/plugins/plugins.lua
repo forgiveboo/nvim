@@ -59,7 +59,7 @@ return require('packer').startup(function(use)
 	-- git
 	use 'lewis6991/gitsigns.nvim'
 
-	--code
+	-- code
 	use 'numToStr/Comment.nvim'
 	use "SmiteshP/nvim-navic"
 	use 'mfussenegger/nvim-dap'
