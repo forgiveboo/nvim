@@ -85,6 +85,13 @@ require'cmp'.setup {
     }),
 	 }
 }
+
+cmp.setup.cmdline('/', {
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
 require'lspconfig'.pyright.setup{
 	on_attach = on_attach,
   flags = lsp_flags,
