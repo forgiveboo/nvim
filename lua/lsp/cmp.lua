@@ -51,10 +51,10 @@ require'cmp'.setup {
   },
 	sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    -- For luasnip users.
     { name = 'luasnip' },
      }, { { name = 'buffer' },
-       { name = 'path' }
+       { name = 'path' },
+			 { name = 'cmdline' },
     }),
 	formatting = {
     format = lspkind.cmp_format({
