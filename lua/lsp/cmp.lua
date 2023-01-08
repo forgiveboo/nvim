@@ -7,9 +7,11 @@ require("mason").setup({
         }
     }
 })
+
 local cmp = require'cmp'
 local lspkind = require('lspkind')
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require('lspkind').init({
     mode = 'symbol_text',
     preset = 'codicons',
@@ -86,11 +88,11 @@ require'cmp'.setup {
 	 }
 }
 
-cmp.setup.cmdline('/', {
+--[[ cmp.setup.cmdline('/', {
   sources = {
     { name = 'buffer' }
   }
-})
+}) ]]
 
 require'lspconfig'.pyright.setup{
 	on_attach = on_attach,
@@ -103,3 +105,9 @@ require 'lspconfig'.jdtls.setup{
 	flags = lsp_flags,
 	capabilities = capabilities,
 }
+
+--[[ require 'lspconfig'.lua_language_server.setup{
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities,
+} ]]
