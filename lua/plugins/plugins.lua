@@ -65,4 +65,7 @@ return require('packer').startup(function(use)
 	use 'mfussenegger/nvim-dap'
 	use 'rcarriga/nvim-dap-ui'
 
+	-- markdown
+	use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
+
 end)
